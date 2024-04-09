@@ -42,18 +42,14 @@ nav a {
 .second-line-header {
   padding: 10px 25px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid lightgray;
 }
 
-.search {
-  width: 950px;
-}
+
 
 .form {
-  width: 100%;
   font-size: 1rem;
 }
 
@@ -73,23 +69,18 @@ nav a {
   background-position: 10px;
   background-repeat: no-repeat;
   padding: 12px 12px 12px 40px;
-  width: 90%;
-  height: 28px;
   background-color: rgb(244, 244, 244);
   border-style: none;
 }
-.link-btn-header-log {
+
+.link-btn-header {
   text-decoration: none;
   color: black;
   font-size: 0.8rem;
   padding: 5px 12px;
 }
 
-.link-btn-header-join {
-  text-decoration: none;
-  color: black;
-  font-size: 0.8rem;
-  padding: 5px 12px;
+.join {
   border-style: solid;
   border-width: thin;
 }
