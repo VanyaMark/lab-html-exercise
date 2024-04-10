@@ -35,20 +35,33 @@ a {
 
 .topSearch {
     padding: 0.5rem;
+    gap: 1rem
 }
 
+
 .npmLogo {
-    width: 150px;
+    width: 100px;
 }
 
 .searchForm {
     display: flex;
+    width: 100%;
+    /** Formulario, ocupa todo el espacio disponible que te deje tu contenedor padre flex*/
+
+}
+
+.searchForm>img {
+    background-color: rgba(0, 0, 0, .05);
+    width: 50px;
+    padding: 8px;
 }
 
 .searchForm>input {
     padding: 1rem;
     border: none;
     /** 1 rem en cuatro direcciones*/
+    flex-grow: 1;
+    /** Respecto a tus hermanos , tu debes crecer siempre y tomar el espacio disponible que te permitan */
 
 }
 
@@ -82,20 +95,21 @@ input[type=submit] {
 
 .section-amazing {
     text-align: center;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(232, 217, 217, .3);
     padding: 30px;
 }
 
 .section-amazing__title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .section-amazing__description {
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
+    font-size: 1rem;
 }
 
 .section-amazing__links {
@@ -139,10 +153,58 @@ input[type=submit] {
 }
 
 .section-open-source__title {
-    font-size: 2rem;
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+    font-size: 1.6rem;
+    padding: 0 2%;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
 .section-open-source__description {
     text-align: center;
-    width: 60%;
+    width: 40%;
+    padding-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+
+.section-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+.section-features__container {
+    display: flex;
+    gap: 4rem;
+}
+
+.section-features__image {
+    height: 20px;
+}
+
+.section-features__title {
+    color: #ed1c24;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.section-features__description {
+    font-size: 0.8rem;
+    width: 200px;
+}
+
+.section-features__btn {
+    margin-top:3rem;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+    padding: 12px 80px;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
 }

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+header>div {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.topSearch {
+    padding: 0.5rem;
+}
+
+.npmLogo {
+    width: 150px;
+}
+
+.searchForm {
+    display: flex;
+}
+
+.searchForm>input {
+    padding: 1rem;
+    border: none;
+    /** 1 rem en cuatro direcciones*/
+
+}
+
+#package-name {
+    background-color: rgba(0, 0, 0, .05);
+    width: 350px;
+}
+
+input[type=submit] {
+    background-color: #fb3e44;
+    color: white;
+}
+
+.loginLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.loginLinks>a {
+    color: rgba(0, 0, 0, .7);
+    padding: 0.4rem 1rem;
+    /** 0.4rem arriba y abajo de cada enlace, y 1rem izquierda y derecha de cada enlace*/
+}
+
+/** Porque esta nomenclatura ? Metodología BEM */
+.loginLinks__join {
+    border: 1px solid rgba(0, 0, 0, .7);
+
+}
+
+.section-amazing {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(232, 217, 217, .3);
+}
+
+.section-amazing__title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-amazing__description {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.section-amazing__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.section-amazing__links>a {
+    padding: 1rem 3rem;
+    font-weight: 700;
+}
+
+.link-see-plans {
+    color: white;
+    background-color: #fb3e44;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2)
+}
+
+.link-join-free {
+    background-color: white;
+}
+
+
+
+
+.section-open-source {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.section-open-source__image {
+    width: 200px;
+}
+
+.section-open-source__title {
+    font-size: 2rem;
+}
+
+.section-open-source__description {
+    text-align: center;
+    width: 60%;
+}
